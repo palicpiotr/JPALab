@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+         <h:form>
+            <table>
+                <tr>
+                    <th>
+                        <h:outputLabel value="Name" for="name"/>
+                    </th>
+                    <th>
+                        <h:inputText id="name" value="#{entityBeans.author.name}" required="true">  
+                        </h:inputText>                                                                   
+
+                    </th>
+                    <th>
+                        <h:message for="name" style="color:red" /> 
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <h:outputLabel value="Surname" for="surname"/>
+                    </th>
+                    <th>
+                        <h:inputText id="surname" value="#{entityBeans.author.surname}" required="true">
+                        </h:inputText>                                                                   
+                    </th>
+                    <th>
+                        <h:message for="surname" style="color:red" /> 
+                    </th>
+                </tr> 
+
+                <tr>
+                    <th>
+                        <h:outputLabel value="Age" for="age"/>
+                    </th>
+                    <th>
+                        <h:inputText id="age" value="#{entityBeans.author.age}" required="true">
+                        </h:inputText>                                                                   
+                    </th>
+                    <th>
+                        <h:message for="age" style="color:red" /> 
+                    </th>
+                </tr> 
+
+                <tr>
+                    <th>
+                        <h:outputLabel value="Country" for="country"/>
+                    </th>
+                    <th>
+                        <h:inputText id="country" value="#{entityBeans.author.country}" required="true">
+                        </h:inputText>                                                                   
+                    </th>
+                    <th>
+                        <h:message for="country" style="color:red" /> 
+                    </th>
+                </tr> 
+                
+                <tr>
+                    <th></th>
+                    <th>
+                        <h:commandLink value="Add Author" action="#{entityBeans.addAuthor()}"/>
+                    </th>
+                </tr>
+            </table>
+        </h:form>
+    </h:body>
+</html>
+
